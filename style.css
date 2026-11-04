@@ -118,12 +118,17 @@ li{ margin-bottom: 10px; }
 }
 .orbit-core{
   position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);
-  width: 120px; height:120px; border-radius: 50%;
+  width: 140px; height:140px; border-radius: 50%;
   background: var(--accent-grad);
   display:flex; align-items:center; justify-content:center;
-  font-family: var(--font-head); font-weight:700; font-size: 1.6rem; color:#060308;
+  overflow: hidden;
+  padding: 4px;
   box-shadow: 0 0 80px rgba(72,61,139,0.45);
   animation: pulse 4s ease-in-out infinite;
+}
+.orbit-avatar{
+  width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+  display: block;
 }
 .orbit-card{
   position:absolute;
